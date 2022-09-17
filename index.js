@@ -11,7 +11,7 @@ let cardsEl = document.querySelector("#cards-el")
 sumEl.textContent = "Sum: " + 0
 
 function startGame(){
-    renderame()
+    renderGame()
 }
 function renderGame(){
     sumEl.textContent = "Sum: " +sum
