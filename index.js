@@ -13,7 +13,7 @@ sumEl.textContent = "Sum: " + 0
 function startGame(){
     renderame()
 }
-function renderame(){
+function renderGame(){
     sumEl.textContent = "Sum: " +sum
     cardsEl.textContent = "Cards: "
     for(let i = 0; i < cards.length; i++){
@@ -40,8 +40,6 @@ let newCard = 8
 cards.push(newCard)
 sum+=newCard
 renderGame()
-
-
 
 }
 
