@@ -33,7 +33,6 @@ function renderame(){
         isAlive = false
     }
     messageEl.textContent = message  
-    console.log(message)
  
 }
 function newCard(){
