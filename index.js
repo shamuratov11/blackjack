@@ -11,11 +11,21 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#cards-el")
 sumEl.textContent = "Sum: " + 0
-// 1. Create a function, getRandomCard(), that always returns the number 5
-function getRandomCard(){
 
-    return 5
-}
+function getRandomCard(){
+    let randomNumber = Math.floor(Math.random)+1
+
+        if(randomNumber>9){
+            return 10
+        }
+        else if(randomNumber===1){
+        return 11
+        }
+        else {
+        return randomNumber
+        }
+   
+}   
 
 function startGame(){
     renderGame()
