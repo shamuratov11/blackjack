@@ -13,7 +13,7 @@ let cardsEl = document.querySelector("#cards-el")
 sumEl.textContent = "Sum: " + 0
 
 function getRandomCard(){
-    let randomNumber = Math.floor(Math.random)+1
+    let randomNumber = Math.floor(Math.random()*13)+1
 
         if(randomNumber>9){
             return 10
