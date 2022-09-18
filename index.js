@@ -56,11 +56,13 @@ function renderGame(){
  
 }
 function newCard(){
-let newCard = getRandomCard()
- // 3. Use the getRandomCard() to set the value of card
-cards.push(newCard)
-sum+=newCard
-renderGame()
+        // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+    if(isAlive&&!hasBlackJack){
+        let newCard = getRandomCard()
+    cards.push(newCard)
+    sum+=newCard
+    renderGame()
+    }
 
 }
 
